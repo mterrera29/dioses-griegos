@@ -7,7 +7,6 @@ import img6 from "./images/chopper.jpg"
 import img7 from "./images/cosecha.jpg"
 import img8 from "./images/ganaderia.jpeg"
 import img9 from "./images/hachaMano.jpg"
-import img10 from "./images/hoz1.jpg"
 import img11 from "./images/molino.jpg"
 import img12 from "./images/puntaPiedra.webp"
 import img13 from "./images/aguja.jpg"
@@ -42,9 +41,9 @@ const CONSIGNAS = [
   {id:9,img: img9, question:"¿La herramienta pertenece al Paleolítico o al Neolítico?", answer:[{ans:"Neolítico"},{ans:"Paleolítico"}], correct:"Paleolítico"},
   {id:9,img: img9, question:"¿Para qué se utilizaba esta herramienta?", answer:[{ans:"Faenar animales"},{ans:"Abrir surcos para sembrar el terreno"},{ans:"Cazar animales"},{ans:"Moler granos"}], correct:"Faenar animales"},
   {id:9,img: img9, question:"¿Qué herramienta es?", answer:[{ans:"Hacha pulida"},{ans:"Chopper"},{ans:"Arado"},{ans:"Hacha de mano"}], correct:"Hacha de mano"},
-  {id:10,img: img10, question:"¿Qué herramienta es?", answer:[{ans:"Hoz"},{ans:"Chopper"},{ans:"Hacha de mano"},{ans:"Mortero"}], correct:"Hoz"},
+/*   {id:10,img: img10, question:"¿Qué herramienta es?", answer:[{ans:"Hoz"},{ans:"Chopper"},{ans:"Hacha de mano"},{ans:"Mortero"}], correct:"Hoz"},
   {id:10,img: img10, question:"¿La herramienta pertenece al Paleolítico o al Neolítico?", answer:[{ans:"Neolítico"},{ans:"Paleolítico"}], correct:"Neolítico"},
-  {id:10,img: img10, question:"¿Para qué se utilizaba esta herramienta?", answer:[{ans:"Limpiar el terreno"},{ans:"Abrir surcos para sembrar el terreno"},{ans:"Cazar animales"},{ans:"Cosechar granos"}], correct:"Cosechar granos"},
+  {id:10,img: img10, question:"¿Para qué se utilizaba esta herramienta?", answer:[{ans:"Limpiar el terreno"},{ans:"Abrir surcos para sembrar el terreno"},{ans:"Cazar animales"},{ans:"Cosechar granos"}], correct:"Cosechar granos"}, */
   {id:11,img: img11, question:"¿Qué herramienta es?", answer:[{ans:"Hoz"},{ans:"Chopper"},{ans:"Hacha de mano"},{ans:"Mortero"}], correct:"Mortero"},
   {id:11,img: img11, question:"¿La herramienta pertenece al Paleolítico o al Neolítico?", answer:[{ans:"Neolítico"},{ans:"Paleolítico"}], correct:"Neolítico"},
   {id:11,img: img11, question:"¿Para qué se utilizaba esta herramienta?", answer:[{ans:"Limpiar el terreno"},{ans:"Abrir surcos para sembrar el terreno"},{ans:"Cazar animales"},{ans:"Moler granos"}], correct:"Moler granos"},
