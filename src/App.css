@@ -326,8 +326,12 @@
       ". "
       ". "; 
   }
+  .questions{
+    font-size: 22px;
+  }
   .respuestasCaja{
     margin: 2px;
+    font-size: 22px;
   }
   .modalWin{
     width:95%;
