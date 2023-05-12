@@ -3,6 +3,7 @@ import CONSIGNAS from '../data.js'
 import { ModalWin } from './ModalWin.jsx'
 import { GameContainer } from './GameContainer.jsx'
 import DarkMode from './DarkMode.jsx'
+import star from "../images/asets/star.png"
 
 function AppGame() {
   const [select, setSelect] = useState()
@@ -12,9 +13,9 @@ function AppGame() {
   const [darkMode, setDarkMode] = useState(false);
   const [puntos, setPuntos] = useState(0)
   const [winner, setWinner] = useState (false)
-  const [preguntasCant, setPreguntasCant] = useState(10)
+  const [preguntasCant, setPreguntasCant] = useState(undefined)
+  const consignasData = CONSIGNAS[index]
 
-  
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,18 +28,17 @@ function AppGame() {
 
   useEffect(() => {
     if (select) {
-        if(select === CONSIGNAS[index].correct){
+        if(select === consignasData.correct){
           setIsCorrect(true);
           setPuntos(puntos +1)
         }else{
           setIsCorrect(false)
         }
     }
-
   }, [select])
 
-  const selected = (a)=> {
-    !select && setSelect(a)
+  const selected = (answer)=> {
+    !select && setSelect(answer)
   }
 
   const reloadGame =()=>{
@@ -62,14 +62,20 @@ function AppGame() {
   
   return (
     <main className={darkMode?'mainAppDark':'mainApp'}>
-      <div className='puntos'>Puntos: {puntos} de {preguntasCant}
-      </div>
-      {isLoading?
+      {!preguntasCant &&
+      <section className='appContainer'>
+        <div className="btnCant" onClick={()=>setPreguntasCant(10)}>10 preguntas</div>
+        <div className="btnCant" onClick={()=>setPreguntasCant(20)}>20 preguntas</div>
+        <div className="btnCant" onClick={()=>setPreguntasCant(30)}>30 preguntas</div>
+      </section>}
+      {preguntasCant &&isLoading ?
+      
         <span className='loader'></span>
         :winner?
         <ModalWin winner={winner} reloadGame={reloadGame} puntos={puntos} preguntasCant={preguntasCant}/>
-        :
-        <GameContainer isCorrect={isCorrect} index={index} select={select} selected={selected} puntos={puntos} siguiente={siguiente} />
+        :preguntasCant !== undefined?
+        <GameContainer index={index} isCorrect={isCorrect} select={select} selected={selected} puntos={puntos} siguiente={siguiente} consignasData={consignasData} preguntasCant={preguntasCant} />
+        : <div></div>
       }
       <DarkMode darkMode={darkMode} cambiarMode={cambiarMode}/>
     </main>

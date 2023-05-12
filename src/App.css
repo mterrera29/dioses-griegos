@@ -55,6 +55,7 @@
   height: 50px;
 }
 .image{
+  position: relative;
   width: min-content;
   max-height: 350px;
   border-radius: 14px;
@@ -92,6 +93,7 @@
 }
 
 .respuestasCaja{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +111,13 @@
 .respuestasCaja:hover{
   background-color: #6d6c6d;
 }
-
+.respuestaIcon{
+  width: 45px;
+  height: auto;
+  position: absolute;
+  left: 5px;
+  z-index: 5;
+}
 .modalWin{
   position: relative;
   display: flex;
@@ -140,7 +148,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 5px;
+  bottom: 0px;
   background-color: #424142;
   height: min fit-content;
   border-radius: 14px;
@@ -180,6 +188,22 @@
   font-size: 1.5em;
   color: rgb(255, 255, 63);
   font-weight: bold
+}
+
+.imgSpan{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: #424142;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  box-shadow:4px -4px grey;
+  width: min-content;
+  z-index: 2;
 }
 
 

@@ -3,6 +3,8 @@ import AppGame from './components/AppGame'
 import './App.css'
 import MainGame from './components/MainGame';
 
+
+
 function App (){
   return (
     <BrowserRouter>

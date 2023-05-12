@@ -31,17 +31,18 @@
 
 
 .btnWinner{
-    background-color: #424142;
-    height: min fit-content;
-    border-radius: 14px;
-    text-align: center;
-    padding: 0.2rem;
-    cursor: pointer;
-    box-shadow:4px -4px grey;
-    width: 150px;
-    z-index: 4;
-    color: white;
-    border: 1px grey solid
+  background-color: #424142;
+  height: min fit-content;
+  border-radius: 14px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  box-shadow:4px -4px grey;
+  width: 150px;
+  z-index: 4;
+  color: white;
+  border: 1px grey solid;
+  text-decoration: none;
 }
 
 .btnWinner:hover{
