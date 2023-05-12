@@ -327,11 +327,12 @@
       ". "; 
   }
   .questions{
-    font-size: 20px;
+    font-size: 18px;
   }
+  
   .respuestasCaja{
     margin: 2px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .modalWin{
     width:95%;
