@@ -1,5 +1,5 @@
 import React from 'react'
-import { RespuestasCaja } from './RespuestasCaja'
+import { Respuestas } from './Respuestas'
 
 export const GameContainer = ({puntos, isCorrect, index, select, selected, siguiente, consignasData, preguntasCant}) => {
   const answers = consignasData.answer
@@ -20,11 +20,7 @@ export const GameContainer = ({puntos, isCorrect, index, select, selected, sigui
         <div className='questions'>
           <h4>{consignasData.question}</h4>
         </div>
-        <div className='respuestas'>
-          {answers.map((a, indice)=> (
-            <RespuestasCaja a={a} select={select} selected={selected} key={indice} consignasData={consignasData} />
-          ))}
-        </div>
+        <Respuestas select={select} selected={selected} consignasData={consignasData} />
         {isCorrect=== undefined?
         <></>:
         <div className='btnSiguiente'

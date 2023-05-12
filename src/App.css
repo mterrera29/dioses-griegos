@@ -80,6 +80,7 @@
   padding: 0.5rem;
   background-color: #424142;
   box-shadow:4px -4px grey;
+  font-size: 18px;
 }
 .respuestas{
   width: 100%;
@@ -106,6 +107,7 @@
   padding: 0.2rem;
   cursor: pointer;
   box-shadow:4px -4px grey;
+  font-size: 18px;
 
 }
 .respuestasCaja:hover{

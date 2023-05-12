@@ -4,6 +4,7 @@ import { ModalWin } from './ModalWin.jsx'
 import { GameContainer } from './GameContainer.jsx'
 import DarkMode from './DarkMode.jsx'
 import star from "../images/asets/star.png"
+import { CuantasPreguntas } from './CuantasPreguntas.jsx'
 
 function AppGame() {
   const [select, setSelect] = useState()
@@ -59,15 +60,16 @@ function AppGame() {
   const cambiarMode = ()=>{
     darkMode?setDarkMode(false):setDarkMode(true)
   }
+
+  const cuantasPreguntas =(cant)=>{
+    setPreguntasCant(cant)
+  }
   
   return (
     <main className={darkMode?'mainAppDark':'mainApp'}>
       {!preguntasCant &&
-      <section className='appContainer'>
-        <div className="btnCant" onClick={()=>setPreguntasCant(10)}>10 preguntas</div>
-        <div className="btnCant" onClick={()=>setPreguntasCant(20)}>20 preguntas</div>
-        <div className="btnCant" onClick={()=>setPreguntasCant(30)}>30 preguntas</div>
-      </section>}
+       <CuantasPreguntas cuantasPreguntas={cuantasPreguntas} />
+      }
       {preguntasCant &&isLoading ?
       
         <span className='loader'></span>
