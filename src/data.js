@@ -64,6 +64,6 @@ const CONSIGNAS = [
   {id:19,img: img19, question:"¿Qué se observa en la imagen?", answer:[{ans:"Un campamento Paleolítico"},{ans:"Un poblado Neolítico"}], correct:"Un campamento Paleolítico"},
   {id:20,img: img20, question:"¿Esta actividad es del Paleolítico o el Neolítico?", answer:[{ans:"Neolítico"},{ans:"Paleolítico"}], correct:"Paleolítico"},
   {id:20,img: img20, question:"¿Qué actividad está realizando?", answer:[{ans:"Sembrar"},{ans:"Recolectar alimentos"},{ans:"Cazar animales"},{ans:"Cosechar"}], correct:"Recolectar alimentos"}
-].sort(() => Math.random() - 0.5);
+]
 
 export default CONSIGNAS

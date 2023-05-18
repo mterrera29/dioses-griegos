@@ -16,7 +16,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 } 
-
+:root {
+  --claro:rgb(128, 128, 128, .8);
+  --oscuro:rgb(66, 65, 66, .8);
+ 
+ }
 a {
   text-decoration: inherit;
 }

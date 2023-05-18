@@ -4,12 +4,12 @@ import "./ModalWin.css"
 import confetti from 'canvas-confetti'
 import { Link } from 'react-router-dom'
 
-  export function ModalWin({winner, reloadGame, puntos, preguntasCant}) {
-    const total = (puntos * 100) / preguntasCant
+  export function ModalWin({winner, reloaderGame, puntos, preguntasCant}) {
+    const total = Math.round((puntos * 100) / preguntasCant)
     const winnerText = total===100? "¡Experto!": total>90 ? "¡Excelente!": (total>80)?"¡Muy Bien!": (total>=70)? "¡Bien!":"¡Debes Mejorar!"
 
     const handleReload = ()=>{
-      reloadGame()
+      reloaderGame()
     }
     useEffect(() => {
       if(total>=70){
