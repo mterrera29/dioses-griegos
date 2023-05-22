@@ -1,11 +1,14 @@
-import { useState} from 'react'
+import { useState, useContext} from 'react'
 import { GameContainer } from './GameContainer.jsx'
 import DarkMode from './DarkMode.jsx'
 import { CuantasPreguntas } from './CuantasPreguntas.jsx'
+import { DarkModeContext } from "../context/darkMode";
+import { SelectedProvider } from '../context/selected.jsx';
+
 
 
 function AppGame() {
-  const [darkMode, setDarkMode] = useState(false);
+  const {darkMode, setDarkMode} = useContext(DarkModeContext);
   const [preguntasCant, setPreguntasCant] = useState(undefined)
 
   const cambiarMode = ()=>{
@@ -17,14 +20,19 @@ function AppGame() {
   }
   
   return (
-    <main className={darkMode?'mainAppDark':'mainApp'}>
-      {!preguntasCant ?
-        <CuantasPreguntas cuantasPreguntas={cuantasPreguntas} />
-        :
-        <GameContainer preguntasCant={preguntasCant} />
-      }
-      <DarkMode darkMode={darkMode} cambiarMode={cambiarMode}/>
-    </main>
+      <SelectedProvider>
+        <main className={darkMode?'mainApp dark':'mainApp'}>
+          {!preguntasCant ?
+            <>
+              <h1 className={darkMode?'mainTitle dark':'mainTitle'}>prehistoric games</h1>
+              <CuantasPreguntas cuantasPreguntas={cuantasPreguntas} />
+            </>
+            :
+            <GameContainer preguntasCant={preguntasCant} />
+          }
+          <DarkMode darkMode={darkMode} cambiarMode={cambiarMode}/>
+        </main>
+      </SelectedProvider>
   )
 }
 

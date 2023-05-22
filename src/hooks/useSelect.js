@@ -1,13 +1,11 @@
-import { useState, useEffect } from "react"
-import CONSIGNAS from '../data.js'
+import { useState, useEffect, useContext } from "react"
+import { SelectedContext } from "../context/selected"
 
-export function useSelect ({index}){
-  const [select, setSelect] = useState()
-  const consignasData = CONSIGNAS[index]
+export function useSelect (){
+  const {select, setSelect }= useContext(SelectedContext)
   const selected = (answer)=> {
     if(answer=== undefined) return setSelect()
     !select && setSelect(answer)
   }
-
   return { select, selected}
 }

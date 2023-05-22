@@ -1,14 +1,12 @@
 import React from 'react'
+import "./Siguiente.css"
 
 export const Siguiente = ({isCorrect, siguiente}) => {
-  const handleSig=()=>{
-    siguiente()
-  }
   return (
     <>
     {isCorrect !== undefined &&
         <div className='btnSiguiente'
-          onClick={handleSig}>
+          onClick={siguiente}>
             Siguiente
         </div>
           }

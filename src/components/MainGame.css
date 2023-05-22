@@ -1,25 +1,30 @@
 .mainGame{
+  background-image: url("../images/asets/fondoLight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+
   position: relative;
   display: flex;
   justify-content: center;
   width: 80%;
     height: 100vh;
     margin:auto;
-    background-image: url("../images/asets/fondoLight.jpg");
-  background-repeat: no-repeat;
-  background-size: cover ;
 }
-.mainGameDark{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 80%;
-    height: 100vh;
-    margin:auto;
-    background-image: url("../images/asets/fondoDark.jpg");
-  background-repeat: no-repeat;
-  background-size: cover ;
+.mainGame.dark{
+  background-image: url("../images/asets/fondoDark.jpg");
 }
+
+.mainTitle{
+  font-size: 70px;
+  color: rgb(66, 65, 66);
+  line-height: 1;
+  margin: 10px;
+  margin-top: 30px;
+}
+.mainTitle.dark{
+  color: rgb(219, 219, 219);
+}
+
 .btnMain{
   position: absolute;
   left: 50%;
@@ -62,9 +67,6 @@
 
 @media screen and (max-width: 700px){
   .mainGame{
-    width: 100%;
-  }
-  .mainGameDark{
     width: 100%;
   }
 }

@@ -1,15 +1,19 @@
 import React from 'react'
 
 export const CuantasPreguntas = ({cuantasPreguntas}) => {
+  const preguntasCant=[5,20,30]
+
   function handleClick(cant){
     cuantasPreguntas(cant)
   }
 
   return (
     <section className='appContainer'>
-        <div className="btnCant" onClick={()=>handleClick(5)}>10 preguntas</div>
-        <div className="btnCant" onClick={()=>handleClick(20)}>20 preguntas</div>
-        <div className="btnCant" onClick={()=>handleClick(30)}>30 preguntas</div>
+      {
+      preguntasCant.map((cant)=>(
+        <div className="btnCant" onClick={()=>handleClick(cant)}>{cant} preguntas</div>
+      ))
+      }
       </section>
   )
 }

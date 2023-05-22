@@ -1,5 +1,6 @@
 import React from 'react'
 import CONSIGNAS from '../data.js'
+import "./GameContainer.css"
 import { useState, useEffect } from 'react'
 import { Respuestas } from './Respuestas'
 import { ModalWin } from './ModalWin'
@@ -13,7 +14,7 @@ const shuffledConsignas = CONSIGNAS.sort(() => Math.random() - 0.5);
 
 export const GameContainer = ({preguntasCant}) => {
   const {index, raiseIndex, reloadIndex} = useIndex()
-  const {select, selected} = useSelect({index})
+  const {select, selected} = useSelect()
   const {isCorrect, puntos, isLoading, resetPts} = useCorrect({index, select})
   const [winner, setWinner] = useState (false)
   const consignasData = shuffledConsignas[index]
@@ -51,8 +52,8 @@ export const GameContainer = ({preguntasCant}) => {
         <div className='questions'>
           <h4>{consignasData.question}</h4>
         </div>
-        <Respuestas select={select} selected={selected} consignasData={consignasData} />
-        <Siguiente isCorrect={isCorrect} siguiente={siguiente} />
+        <Respuestas consignasData={consignasData} />
+        <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} />
       </section>
     }
   </>

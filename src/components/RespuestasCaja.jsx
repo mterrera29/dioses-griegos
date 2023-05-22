@@ -1,9 +1,13 @@
+import { useSelect } from "../hooks/useSelect";
 import correct from "../images/asets/correct2.png"
 import incorrect from "../images/asets/incorrect2.png"
-export const RespuestasCaja = ({a, select, selected, consignasData}) => {
+export const RespuestasCaja = ({a, consignasData}) => {
+  const {select, selected} = useSelect()
+
   const handleAns = () => {
     selected(a.ans);
   };
+  
   return (
     <div className='respuestasCaja'
       style={

@@ -1,0 +1,146 @@
+.title{
+  text-align: center;
+  padding: 0.5rem;
+  height: 50px;
+}
+.image{
+  position: relative;
+  width: min-content;
+  max-height: 350px;
+  border-radius: 14px;
+  margin: 5px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:4px -4px var(--claro);
+}
+.image img{
+  margin: auto;
+  width: 500px;
+  height: auto;
+}
+.questions{
+  width: 95%;
+  height: min fit-content;
+  border-radius: 14px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  font-size: 18px;
+}
+.respuestas{
+  width: 100%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 5px; 
+  grid-template-areas: 
+    ".."
+    ".."; 
+}
+
+.respuestasCaja{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: min fit-content;
+  border-radius: 14px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+.respuestasCaja:hover{
+  background-color: #6d6c6d;
+}
+.respuestaIcon{
+  width: 45px;
+  height: auto;
+  position: absolute;
+  left: 5px;
+  z-index: 5;
+}
+.darkMode{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: 30px;
+  border-radius: 100px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: 30px;
+  z-index: 2;
+}
+.darkMode:hover{
+  background-color: #6d6c6d;
+}
+.puntos{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(255, 255, 63);
+  font-weight: bold
+}
+.imgSpan{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: min-content;
+  z-index: 2;
+}
+@media screen and (max-width: 700px){
+  .image{
+    width: 95%;
+    max-height: 250px;
+  }
+  .image img{
+    width: 100%;
+    color : #4cb84c
+  }
+  .respuestas{
+    margin-top: 20px;
+    display: grid; 
+    grid-template-columns: 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 5px; 
+    grid-template-areas: 
+      ". "
+      ". "
+      ". "
+      ". "; 
+  }
+  .questions{
+    font-size: 18px;
+  }
+  
+  .respuestasCaja{
+    margin: 2px;
+    font-size: 18px;
+  }
+  .puntos{
+    font-size: 1.2em;
+  }
+}
