@@ -10,9 +10,9 @@ import { Siguiente } from './Siguiente.jsx'
 import { useCorrect } from '../hooks/useCorrect.js'
 import { Image } from './Image.jsx'
 
-const shuffledConsignas = CONSIGNAS.sort(() => Math.random() - 0.5);
+const shuffledConsignas = CONSIGNAS
 
-export const GameContainer = ({preguntasCant}) => {
+export const GameContainer = ({preguntasCant, darkMode}) => {
   const {index, raiseIndex, reloadIndex} = useIndex()
   const {select, selected} = useSelect()
   const {isCorrect, puntos, isLoading, resetPts} = useCorrect({index, select})
@@ -38,23 +38,26 @@ export const GameContainer = ({preguntasCant}) => {
 
   return (
     <>
+      <h4 className={darkMode?'titleGame dark':'titleGame'}>prehistoric games</h4>
       {isLoading ?
       <span className='loader'></span>
       :winner?
       <ModalWin winner={winner} reloaderGame={reloaderGame} puntos={puntos} preguntasCant={preguntasCant}/>
       :
-      <section className='appContainer'>
-        <div className='puntos'>Puntos: {puntos} de {preguntasCant}</div>
-        <div className='title'>
-          {isCorrect === undefined? <h1></h1>: isCorrect?<h1 style={{color:"green"}}>Correcto</h1>:<h1 style={{color:"red"}}>Incorrecto</h1>}
-        </div>
-        <Image index={index} preguntasCant={preguntasCant} consignasData={consignasData} />
-        <div className='questions'>
-          <h4>{consignasData.question}</h4>
-        </div>
-        <Respuestas consignasData={consignasData} />
-        <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} />
-      </section>
+      <>
+        <section className='appContainer'>
+          <div className='title'>
+            {isCorrect === undefined? <h1></h1>: isCorrect?<h1 style={{color:"#4cb84c"}}>Correcto</h1>:<h1 style={{color:"#d64040"}}>Incorrecto</h1>}
+          </div>
+          <Image index={index} preguntasCant={preguntasCant} consignasData={consignasData}/>
+          <div className='questions'>
+            <h4>{consignasData.question}</h4>
+          </div>
+          <Respuestas consignasData={consignasData} />
+          <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} />
+        </section>
+        <div className='puntos'>Pts : {puntos} de {preguntasCant}</div>
+      </>
     }
   </>
   )

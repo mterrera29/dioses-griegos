@@ -7,11 +7,11 @@ import CONSIGNAS from '../data.js'
   const [isLoading, setIsLoading] = useState(true);
 
   const consignasData = CONSIGNAS[index]
-  console.log(index)
+  console.log(select)
 
   useEffect(() => {
     if (select) {
-        if(select === consignasData.correct){
+        if(select.correct === true){
           setIsCorrect(true);
           setPuntos(puntos +1)
         }else{

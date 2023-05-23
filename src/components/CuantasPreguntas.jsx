@@ -9,11 +9,14 @@ export const CuantasPreguntas = ({cuantasPreguntas}) => {
 
   return (
     <section className='appContainer'>
-      {
-      preguntasCant.map((cant)=>(
-        <div className="btnCant" onClick={()=>handleClick(cant)}>{cant} preguntas</div>
-      ))
-      }
+      <section className='cuantasPregModal'>
+        <h3 className='pregTitle'>¿Paleolítico o Neolítico?</h3>
+        {
+        preguntasCant.map((cant)=>(
+          <div className="btnCant" onClick={()=>handleClick(cant)}>{cant} preguntas</div>
+        ))
+        }
       </section>
+    </section>
   )
 }

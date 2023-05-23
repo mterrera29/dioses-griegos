@@ -6,7 +6,7 @@ export const Respuestas = ({consignasData}) => {
   return (
   <div className='respuestas'>
     {answers.map((a, indice)=> (
-      <RespuestasCaja a={a} key={indice} consignasData={consignasData} />
+      <RespuestasCaja a={a} key={indice} indice={indice} consignasData={consignasData} />
     ))}
   </div>
   )

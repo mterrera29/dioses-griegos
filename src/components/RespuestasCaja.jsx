@@ -5,24 +5,24 @@ export const RespuestasCaja = ({a, consignasData}) => {
   const {select, selected} = useSelect()
 
   const handleAns = () => {
-    selected(a.ans);
+    selected(a);
   };
   
   return (
     <div className='respuestasCaja'
       style={
-        select && select !== a.ans && a.ans === consignasData.correct ? { backgroundColor:"#4cb84c"}
+        select && select.ans !== a.ans && a.correct === true ? { backgroundColor:"#4cb84c"}
         :
-        select === a.ans && select !== consignasData.correct?{backgroundColor:"#d64040"}
+        select && select.ans === a.ans && a.correct === false?{backgroundColor:"#d64040"}
         :
-        select === a.ans && a.ans === consignasData.correct?{backgroundColor:"#4cb84c"}
+        select && select.ans === a.ans && a.correct === true?{backgroundColor:"#4cb84c"}
         :
         {border: "0px grey solid "}}
       onClick={handleAns}>{a.ans}
       {
-        select === a.ans && select !== consignasData.correct?<img className="respuestaIcon" src={incorrect} alt="" />
+        select && select.ans === a.ans && a.correct === false ?<img className="respuestaIcon" src={incorrect} alt="" />
         :
-        select === a.ans && a.ans === consignasData.correct?<img className="respuestaIcon" src={correct} alt="" />
+        select && select.ans === a.ans && a.correct === true?<img className="respuestaIcon" src={correct} alt="" />
         :
         <></>}
     </div>

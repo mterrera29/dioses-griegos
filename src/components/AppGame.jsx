@@ -25,10 +25,10 @@ function AppGame() {
           {!preguntasCant ?
             <>
               <h1 className={darkMode?'mainTitle dark':'mainTitle'}>prehistoric games</h1>
-              <CuantasPreguntas cuantasPreguntas={cuantasPreguntas} />
+              <CuantasPreguntas cuantasPreguntas={cuantasPreguntas}  />
             </>
             :
-            <GameContainer preguntasCant={preguntasCant} />
+            <GameContainer preguntasCant={preguntasCant} darkMode={darkMode} />
           }
           <DarkMode darkMode={darkMode} cambiarMode={cambiarMode}/>
         </main>

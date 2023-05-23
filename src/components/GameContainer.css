@@ -1,7 +1,7 @@
 .title{
   text-align: center;
   padding: 0.5rem;
-  height: 50px;
+  height: 40px;
 }
 .image{
   position: relative;
@@ -89,13 +89,24 @@
 }
 .puntos{
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   left: 5px;
   text-align: center;
   font-size: 1.5em;
   color: rgb(255, 255, 63);
   font-weight: bold
 }
+.titleGame{
+  position: absolute;
+  top: -5px;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(66, 65, 66);
+}
+.titleGame.dark{
+  color: rgb(219, 219, 219);
+}
+
 .imgSpan{
   position: absolute;
   bottom: 2px;
@@ -111,10 +122,24 @@
   width: min-content;
   z-index: 2;
 }
+.imgSpanTitle{
+  position: absolute;
+  top: 2px;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: min-content;
+  z-index: 5;
+}
 @media screen and (max-width: 700px){
   .image{
     width: 95%;
-    max-height: 250px;
+    max-height: 230px;
   }
   .image img{
     width: 100%;
