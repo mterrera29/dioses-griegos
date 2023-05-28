@@ -40,6 +40,7 @@
   width: 150px;
   z-index: 4;
   color: white;
+  font-size: 20px;
 }
 .btnMain:hover{
   background-color: #6d6c6d;
@@ -63,8 +64,27 @@
   color: white;
   border: 1px grey solid;
   text-decoration: none;
+  font-size: 20px;
 }
-
+.winPoints{
+  width: 30px;
+  height: auto;
+  position: absolute;
+  right: -20px;
+  top: -3px;
+  z-index: 5;
+  font-size: 15px;
+  background-color: green;
+  border-radius: 30px;
+}
+.winIcon{
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  z-index: 5;
+}
 @media screen and (max-width: 1000px){
   .mainGame{
     width: 100%;

@@ -16,6 +16,10 @@ import { Link } from 'react-router-dom'
       confetti()
     }
     }, [winner])
+
+    const saveLocal = () => {
+      if(total>=70) localStorage.setItem(`puntosCant${preguntasCant}`, JSON.stringify(total));
+    };
     
 
     if( winner){
@@ -30,7 +34,7 @@ import { Link } from 'react-router-dom'
           </section>
             <div className='btnWinner' onClick={handleReload}>Rehacer</div>
             <Link to="/">
-            <div className='btnWinner' >Menú de Inicio</div>
+            <div className='btnWinner' onClick={()=>saveLocal()} >Menú de Inicio</div>
             </Link>
         </div>
       </section>
