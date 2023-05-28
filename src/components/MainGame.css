@@ -1,5 +1,5 @@
 .mainGame{
-  background-image: url("../images/asets/fondoLight.jpg");
+  background-image: url("../images/asets/comprimidas/fondoLight.jpg");
   background-repeat: no-repeat;
   background-size: cover ;
 
@@ -11,7 +11,7 @@
     margin:auto;
 }
 .mainGame.dark{
-  background-image: url("../images/asets/fondoDark.jpg");
+  background-image: url("../images/asets/comprimidas/fondoDark.jpg");
 }
 
 .mainTitle{

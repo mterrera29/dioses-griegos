@@ -7,13 +7,13 @@
   width: 80%;
   height: 100vh;
   margin:auto;
-  background-image: url("../images/asets/light.jpg");
+  background-image: url("../images/asets/comprimidas/light.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover ;
 }
 .mainApp.dark{
-  background-image: url("../images/asets/dark.jpg");
+  background-image: url("../images/asets/comprimidas/dark.jpg");
 }
 
 .appContainer{
