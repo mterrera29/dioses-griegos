@@ -1,13 +1,9 @@
 import { useState, useEffect } from "react";
-import CONSIGNAS from '../data.js'
 
  export function useCorrect({index, select}){
   const [isCorrect, setIsCorrect] = useState(undefined)
   const [puntos, setPuntos] = useState(0)
   const [isLoading, setIsLoading] = useState(true);
-
-  const consignasData = CONSIGNAS[index]
-  console.log(select)
 
   useEffect(() => {
     if (select) {

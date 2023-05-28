@@ -10,13 +10,17 @@ import { Siguiente } from './Siguiente.jsx'
 import { useCorrect } from '../hooks/useCorrect.js'
 import { Image } from './Image.jsx'
 
-const shuffledConsignas = CONSIGNAS
-
 export const GameContainer = ({preguntasCant, darkMode}) => {
+  const [shuffledConsignas, setShuffledConsignas] = useState(CONSIGNAS)
   const {index, raiseIndex, reloadIndex} = useIndex()
   const {select, selected} = useSelect()
   const {isCorrect, puntos, isLoading, resetPts} = useCorrect({index, select})
   const [winner, setWinner] = useState (false)
+
+  useEffect(() => {
+      setShuffledConsignas(CONSIGNAS.sort(() => Math.random() - 0.5))
+  }, [])
+
   const consignasData = shuffledConsignas[index]
 
   useEffect(() => {

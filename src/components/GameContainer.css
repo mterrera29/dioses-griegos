@@ -75,14 +75,15 @@
   right: 5px;
   background-color: var(--oscuro);
   box-shadow:4px -4px var(--claro);
-  height: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 100px;
   margin: 5px;
   text-align: center;
   padding: 0.2rem;
   cursor: pointer;
-  width: 30px;
   z-index: 2;
+  font-size: 18px;
 }
 .darkMode:hover{
   background-color: #6d6c6d;
@@ -136,7 +137,7 @@
   width: min-content;
   z-index: 5;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
   .image{
     width: 95%;
     max-height: 230px;
@@ -158,12 +159,12 @@
       ". "; 
   }
   .questions{
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .respuestasCaja{
     margin: 2px;
-    font-size: 18px;
+    font-size: 20px;
   }
   .puntos{
     font-size: 1.2em;

@@ -18,6 +18,8 @@ import img17 from "./images/puebloNeo.jpg"
 import img18 from "./images/puebloPaleo.jpg"
 import img19 from "./images/puebloPaleo2.jpg"
 import img20 from "./images/recolección.jpg"
+import img21 from "./images/arpon.jpg"
+import img22 from "./images/ceramica.jpg"
 
 const CONSIGNAS = [{
   id: 1,
@@ -37,38 +39,38 @@ const CONSIGNAS = [{
   img: img1,
   question: "¿Qué están haciendo en la imagen?",
   answer: [{
-    ans: "Recolectando alimentos",
+    ans: "Recolección",
     correct: false
   }, {
     ans: "Cazando",
     correct: false
   }, {
-    ans: "Cosechando granos",
+    ans: "Cosechando",
     correct: true
   }, {
     ans: "Limpiando el terreno",
     correct: false
   }],
-  correct: "Cosechando granos"
+  correct: "Cosechando"
 },
 {
   id: 2,
   img: img2,
   question: "¿Qué están haciendo en la imagen?",
   answer: [{
-    ans: "Cultivando",
+    ans: "Cosechando",
     correct: true
   }, {
     ans: "Cazando",
     correct: false
   }, {
-    ans: "Recolectando alimentos",
+    ans: "Recolección",
     correct: false
   }, {
     ans: "Creando herramientas",
     correct: false
   }],
-  correct: "Cultivando"
+  correct: "Cosechando"
 },
 {
   id: 2,
@@ -574,10 +576,10 @@ const CONSIGNAS = [{
     correct: false
   }, {
     ans: "Cazar animales",
-    correct: false
+    correct: true
   }, {
     ans: "Criar animales",
-    correct: true
+    correct: false
   }],
   correct: "Cazar animales"
 },
@@ -735,6 +737,108 @@ const CONSIGNAS = [{
     correct: false
   }],
   correct: "Recolección"
+},
+{
+  id: 21,
+  img: img21,
+  question: "¿Qué herramienta es?",
+  answer: [{
+    ans: "Hacha pulida",
+    correct: false
+  }, {
+    ans: "Chopper",
+    correct: false
+  }, {
+    ans: "Arado",
+    correct: false
+  }, {
+    ans: "Arpón de hueso",
+    correct: true
+  }],
+  correct: "Arpón de hueso"
+},
+{
+  id: 21,
+  img: img21,
+  question: "¿La herramienta pertenece al Paleolítico o al Neolítico?",
+  answer: [{
+    ans: "Neolítico",
+    correct: false
+  }, {
+    ans: "Paleolítico",
+    correct: true
+  }],
+  correct: "Paleolítico"
+},
+{
+  id: 21,
+  img: img21,
+  question: "¿Para qué se utilizaba esta herramienta?",
+  answer: [{
+    ans: "Limpiar el terreno",
+    correct: false
+  }, {
+    ans: "Abrir surcos para sembrar",
+    correct: false
+  }, {
+    ans: "Cazar",
+    correct: false
+  }, {
+    ans: "Pescar",
+    correct: true
+  }],
+  correct: "Pescar"
+},
+{
+  id: 22,
+  img: img22,
+  question: "¿Qué herramienta es?",
+  answer: [{
+    ans: "Hacha pulida",
+    correct: false
+  }, {
+    ans: "Chopper",
+    correct: false
+  }, {
+    ans: "Cerámica",
+    correct: true
+  }, {
+    ans: "Arpón de hueso",
+    correct: false
+  }],
+  correct: "Cerámica"
+},
+{
+  id: 22,
+  img: img22,
+  question: "¿La herramienta pertenece al Paleolítico o al Neolítico?",
+  answer: [{
+    ans: "Neolítico",
+    correct: true
+  }, {
+    ans: "Paleolítico",
+    correct: false
+  }],
+  correct: "Neolítico"
+},
+{
+  id: 22,
+  img: img22,
+  question: "¿Para qué se utilizaba esta herramienta?",
+  answer: [{
+    ans: "Limpiar el terreno",
+    correct: false
+  }, {
+    ans: "Abrir surcos para sembrar",
+    correct: false
+  }, {
+    ans: "Almacenar granos",
+    correct: true
+  }, {
+    ans: "Pescar",
+    correct: false
+  }],
+  correct: "Almacenar granos"
 }
 ]
 
