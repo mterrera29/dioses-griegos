@@ -14,8 +14,8 @@ const MainGame = () => {
   return (
     <main className={darkMode ? 'mainGame dark':'mainGame'}>
       <DarkMode darkMode={darkMode} cambiarMode={()=>cambiarMode()} />
-      <Link to="/game">
       <h1 className={darkMode?'mainTitle dark':'mainTitle'}>prehistoric games</h1>
+      <Link to="/game">
       <div className="btnMain">¿Paleolítico o Neolítico?</div>
       </Link>
     </main>
