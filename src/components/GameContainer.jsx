@@ -59,8 +59,8 @@ export const GameContainer = ({preguntasCant, darkMode}) => {
           </div>
           <Respuestas consignasData={consignasData} />
           {/* <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} /> */}
-        </section>
         <div className='puntos'>Pts : {puntos} de {preguntasCant}</div>
+        </section>
       </>
     }
   </>

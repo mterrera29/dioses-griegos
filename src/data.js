@@ -139,7 +139,7 @@ const CONSIGNAS = [{
 {
   id: 4,
   img: img4,
-  question: "¿Qué herramienta esta utilizando?",
+  question: "¿Qué herramienta está utilizando?",
   answer: [{
     ans: "Hacha pulida",
     correct: false
