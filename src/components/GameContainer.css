@@ -89,8 +89,6 @@
   background-color: #6d6c6d;
 }
 .puntos{
-  position: absolute;
-  bottom: 30px;
   text-align: center;
   font-size: 1.5em;
   color: rgb(255, 255, 63);
@@ -159,6 +157,7 @@
   }
   .questions{
     font-size: 20px;
+    bottom: 30px;
   }
   
   .respuestasCaja{
