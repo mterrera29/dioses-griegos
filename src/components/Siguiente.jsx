@@ -7,7 +7,7 @@ export const Siguiente = ({isCorrect, siguiente}) => {
     {isCorrect !== undefined &&
         <div className='btnSiguiente'
           onClick={siguiente}>
-            Siguiente
+            Siguiente ▶
         </div>
           }
     </>
