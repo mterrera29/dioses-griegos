@@ -3,7 +3,7 @@ import WinPoints from './WinPoints'
 import winStar from "../images/asets/star.png"
 
 export const CuantasPreguntas = ({cuantasPreguntas}) => {
-  const preguntasCant=[5,20,30]
+  const preguntasCant=[10,20,30]
 
   function handleClick(cant){
     cuantasPreguntas(cant)
