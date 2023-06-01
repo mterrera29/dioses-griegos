@@ -12,7 +12,7 @@
   cursor: pointer;
   width: 150px;
   z-index: 4;
-  font-size: 18px;
+  font-size: 20px;
 }
 .btnSiguiente:hover{
   background-color: #6d6c6d;

@@ -53,12 +53,12 @@ export const GameContainer = ({preguntasCant, darkMode}) => {
           <div className='title'>
             {isCorrect === undefined? <h1></h1>: isCorrect?<h1 style={{color:"#4cb84c"}}>Correcto</h1>:<h1 style={{color:"#d64040"}}>Incorrecto</h1>}
           </div>
-          <Image index={index} preguntasCant={preguntasCant} consignasData={consignasData}/>
+          <Image index={index} preguntasCant={preguntasCant} consignasData={consignasData} isCorrect={isCorrect} siguiente={()=>siguiente()}/>
           <div className='questions'>
             <h4>{consignasData.question}</h4>
           </div>
           <Respuestas consignasData={consignasData} />
-          <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} />
+          {/* <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} /> */}
         </section>
         <div className='puntos'>Pts : {puntos} de {preguntasCant}</div>
       </>
