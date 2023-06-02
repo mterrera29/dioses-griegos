@@ -4,11 +4,10 @@ import DarkMode from './DarkMode.jsx'
 import { CuantasPreguntas } from './CuantasPreguntas.jsx'
 import { DarkModeContext } from "../context/darkMode";
 import { SelectedProvider } from '../context/selected.jsx';
-import TITLES from '../titles.js';
 
 
 
-function AppGame() {
+function AppGame({data}) {
   const {darkMode, setDarkMode} = useContext(DarkModeContext);
   const [preguntasCant, setPreguntasCant] = useState(undefined)
 
@@ -25,11 +24,11 @@ function AppGame() {
         <main className={darkMode?'mainApp dark':'mainApp'}>
           {!preguntasCant ?
             <>
-              <h1 className={darkMode?'animate__animated animate__fadeInDown mainTitle dark':'animate__animated animate__fadeInDown mainTitle'}>{TITLES[0].appTitle}</h1>
-              <CuantasPreguntas cuantasPreguntas={cuantasPreguntas}  />
+              <h1 className={darkMode?'animate__animated animate__fadeInDown mainTitle dark':'animate__animated animate__fadeInDown mainTitle'}>{data.appTitle}</h1>
+              <CuantasPreguntas cuantasPreguntas={cuantasPreguntas} data={data}  />
             </>
             :
-            <GameContainer preguntasCant={preguntasCant} darkMode={darkMode} />
+            <GameContainer preguntasCant={preguntasCant} darkMode={darkMode} data={data} />
           }
           <DarkMode darkMode={darkMode} cambiarMode={cambiarMode}/>
         </main>

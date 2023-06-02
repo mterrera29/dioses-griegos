@@ -11,15 +11,15 @@ import { Siguiente } from './Siguiente.jsx'
 import { useCorrect } from '../hooks/useCorrect.js'
 import { Image } from './Image.jsx'
 
-export const GameContainer = ({preguntasCant, darkMode}) => {
-  const [shuffledConsignas, setShuffledConsignas] = useState(CONSIGNAS)
+export const GameContainer = ({preguntasCant, darkMode, data}) => {
+  const [shuffledConsignas, setShuffledConsignas] = useState(data.consignas)
   const {index, raiseIndex, reloadIndex} = useIndex()
   const {select, selected} = useSelect()
   const {isCorrect, puntos, isLoading, resetPts} = useCorrect({index, select})
   const [winner, setWinner] = useState (false)
 
   useEffect(() => {
-      setShuffledConsignas(CONSIGNAS.sort(() => Math.random() - 0.5))
+      setShuffledConsignas(data.consignas.sort(() => Math.random() - 0.5))
   }, [])
 
   const consignasData = shuffledConsignas[index]
@@ -51,8 +51,7 @@ export const GameContainer = ({preguntasCant, darkMode}) => {
       :
       <>
         <section className='appContainer'>
-          <div className='title'>
-            {isCorrect === undefined? <h1></h1>: isCorrect?<h1 style={{color:"#4cb84c"}}>Correcto</h1>:<h1 style={{color:"#d64040"}}>Incorrecto</h1>}
+          <div className='title'> <h1></h1>
           </div>
           <Image index={index} preguntasCant={preguntasCant} consignasData={consignasData} isCorrect={isCorrect} siguiente={()=>siguiente()}/>
           <div className='questions'>

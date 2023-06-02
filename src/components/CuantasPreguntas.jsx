@@ -2,8 +2,8 @@ import React from 'react'
 import WinPoints from './WinPoints'
 import winStar from "../images/asets/star.png"
 
-export const CuantasPreguntas = ({cuantasPreguntas}) => {
-  const preguntasCant=[10,20,30]
+export const CuantasPreguntas = ({cuantasPreguntas, data}) => {
+  const preguntasCant=data.questionQuantity
 
   function handleClick(cant){
     cuantasPreguntas(cant)
@@ -21,7 +21,7 @@ export const CuantasPreguntas = ({cuantasPreguntas}) => {
   return (
     <section className='appContainer'>
       <section className='cuantasPregModal'>
-        <h3 className='pregTitle'>¿Paleolítico o Neolítico?</h3>
+        <h3 className='pregTitle'>{data.gameTitle}</h3>
         {
         preguntasCant.map((cant)=>(
           <>
