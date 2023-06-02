@@ -1,6 +1,7 @@
 import React from 'react'
 import CONSIGNAS from '../data.js'
 import "./GameContainer.css"
+import TITLES from '../titles.js'
 import { useState, useEffect } from 'react'
 import { Respuestas } from './Respuestas'
 import { ModalWin } from './ModalWin'
@@ -42,7 +43,7 @@ export const GameContainer = ({preguntasCant, darkMode}) => {
 
   return (
     <>
-      <h4 className={darkMode?'titleGame dark':'titleGame'}>prehistoric games</h4>
+      <h4 className={darkMode?'animate__animated animate__fadeInDown titleGame dark':'animate__animated animate__fadeInDown titleGame'}>{TITLES[0].appTitle}</h4>
       {isLoading ?
       <span className='loader'></span>
       :winner?
@@ -59,7 +60,7 @@ export const GameContainer = ({preguntasCant, darkMode}) => {
           </div>
           <Respuestas consignasData={consignasData} />
           {/* <Siguiente isCorrect={isCorrect} siguiente={()=>siguiente()} /> */}
-        <div className='puntos'>Pts : {puntos} de {preguntasCant}</div>
+        <div className='puntos'>Pts : {puntos} </div>
         </section>
       </>
     }
