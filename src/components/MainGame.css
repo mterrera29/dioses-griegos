@@ -18,8 +18,9 @@
   font-size: 70px;
   color: rgb(66, 65, 66);
   line-height: 1;
+  position: absolute;
   margin: 10px;
-  margin-top: 30px;
+  top: 30px;
 }
 .mainTitle.dark{
   color: rgb(219, 219, 219);

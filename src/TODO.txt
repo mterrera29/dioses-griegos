@@ -1,0 +1,6 @@
+Desde MainGame tengo que enviar:
+Titulo app
+Titulo juego
+consignas
+cantidade preguntas
+fondos 1 2 3 y 4

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const WinPoints = ({cant}) => {
-  const puntosPartida = JSON.parse(localStorage.getItem(`puntosCant${cant}`))
+const WinPoints = ({cant, data}) => {
+  const puntosPartida = JSON.parse(localStorage.getItem(`${data.gameTitle}-${cant}`))
   return (
    <>
    {

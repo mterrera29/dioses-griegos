@@ -1,5 +1,4 @@
 import React from 'react'
-import CONSIGNAS from '../data.js'
 import "./GameContainer.css"
 import TITLES from '../titles.js'
 import { useState, useEffect } from 'react'
@@ -7,7 +6,6 @@ import { Respuestas } from './Respuestas'
 import { ModalWin } from './ModalWin'
 import { useIndex } from '../hooks/useIndex'
 import { useSelect } from '../hooks/useSelect'
-import { Siguiente } from './Siguiente.jsx'
 import { useCorrect } from '../hooks/useCorrect.js'
 import { Image } from './Image.jsx'
 
@@ -47,7 +45,7 @@ export const GameContainer = ({preguntasCant, darkMode, data}) => {
       {isLoading ?
       <span className='loader'></span>
       :winner?
-      <ModalWin winner={winner} reloaderGame={reloaderGame} puntos={puntos} preguntasCant={preguntasCant}/>
+      <ModalWin winner={winner} reloaderGame={reloaderGame} puntos={puntos} preguntasCant={preguntasCant} data={data} />
       :
       <>
         <section className='appContainer'>

@@ -4,8 +4,8 @@ import "./ModalWin.css"
 import confetti from 'canvas-confetti'
 import { Link } from 'react-router-dom'
 
-  export function ModalWin({winner, reloaderGame, puntos, preguntasCant}) {
-    const puntosGuardados= JSON.parse(localStorage.getItem(`puntosCant${preguntasCant}`))
+  export function ModalWin({winner, reloaderGame, puntos, preguntasCant, data}) {
+    const puntosGuardados= JSON.parse(localStorage.getItem(`${data.gameTitle}-${preguntasCant}`))
     const total = Math.round((puntos * 100) / preguntasCant)
     const winnerText = total===100? "¡Experto!": total>90 ? "¡Excelente!": (total>80)?"¡Muy Bien!": (total>=70)? "¡Bien!":"¡Debes Mejorar!"
 
@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom'
 
     const saveLocal = () => {
       if(puntosGuardados && total<=puntosGuardados) return
-      if(total>=70) localStorage.setItem(`puntosCant${preguntasCant}`, JSON.stringify(total));
+      if(total>=70) localStorage.setItem(`${data.gameTitle}-${preguntasCant}`, JSON.stringify(total));
     };
     
 

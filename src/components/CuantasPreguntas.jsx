@@ -10,7 +10,7 @@ export const CuantasPreguntas = ({cuantasPreguntas, data}) => {
   }
 
   function isWin(cant){
-    const puntosPartida = JSON.parse(localStorage.getItem(`puntosCant${cant}`))
+    const puntosPartida = JSON.parse(localStorage.getItem(`${data.gameTitle}-${cant}`))
     if(puntosPartida){
       return true
     }else{
@@ -29,7 +29,7 @@ export const CuantasPreguntas = ({cuantasPreguntas, data}) => {
             {isWin(cant) && <img className="winIcon" src={winStar} alt="" />
               }
             
-            <WinPoints cant={cant} />
+            <WinPoints cant={cant} data={data} />
             </div>
           </>
         ))

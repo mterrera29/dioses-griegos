@@ -23,7 +23,7 @@ const MainGame = () => {
         <div className="btnMain">{PALEOLITICO.gameTitle}</div>
         </Link>
         <Link to="/game">
-        <div className="btnMain">{PALEOLITICO_NEOLITICO.gameTitle}</div>
+        <div className="btnMain" >{PALEOLITICO_NEOLITICO.gameTitle}</div>
         </Link>
       </section>
     </main>

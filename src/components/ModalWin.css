@@ -37,13 +37,14 @@
 }
 
 .winner .text {
-  height: 300px;
-  width: 320px;
+  width:60%;
+  height: min-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 20px;
   background-color: var(--oscuro);
   box-shadow:4px -4px var(--claro);
   border-radius: 15px;
@@ -86,5 +87,14 @@
     border-radius: 15px;
     z-index: 3;
   }
+}
+@media screen and (max-width: 500px){
+  .winner .text {
+    width:90%;
+    height: min-content;
+    gap: 20px;
+    padding: 20px;
+  }
+  
 }
 

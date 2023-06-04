@@ -12,7 +12,7 @@ import img21 from "./images/Nueva carpeta/tinified/arpon.jpg"
 export const PALEOLITICO ={
   appTitle:"prehistoric games",
   gameTitle:"La vida en el Paleolítico",
-  questionQuantity:[10],
+  questionQuantity:[2, 15],
   consignas:[
     {
       id: 6,
@@ -185,31 +185,88 @@ export const PALEOLITICO ={
       }],
       correct: "Pesca"
     },
-    {///cambiar
+    {
       id: 18,
       img: img18,
-      question: "¿Qué se observa en la imagen?",
+      question: "¿Qué son las BANDAS o CLANES?",
       answer: [{
-        ans: "Un campamento Paleolítico",
+        ans: "Grupos de 10 o 20 personas",
+        correct: false
+      }, {
+        ans: "Grupos de 1000 o 3000 personas",
+        correct: false
+      }, {
+        ans: "Grupos de 150 o 300 personas",
         correct: true
       }, {
-        ans: "Un poblado Neolítico",
+        ans: "Grupos de 1500 o 3000 personas",
         correct: false
       }],
-      correct: "Un campamento Paleolítico"
+      correct: "Grupos de 150 o 300 personas"
+    },
+    {
+      id: 18,
+      img: img18,
+      question: "¿Donde vivían los seres humanos del Paleolítico?",
+      answer: [{
+        ans: "En cabañas",
+        correct: false
+      }, {
+        ans: "En campamentos",
+        correct: true
+      }, {
+        ans: "Al aire libre",
+        correct: false
+      }, {
+        ans: "En edificios",
+        correct: false
+      }],
+      correct: "En campamentos"
+    },
+    {
+      id: 18,
+      img: img18,
+      question: "¿Donde vivían los seres humanos del Paleolítico?",
+      answer: [{
+        ans: "En cuevas",
+        correct: true
+      }, {
+        ans: "En edificios",
+        correct: false
+      }, {
+        ans: "Al aire libre",
+        correct: false
+      }, {
+        ans: "En cabañas",
+        correct: false
+      }],
+      correct: "En cuevas"
     },
     {///cambiar
       id: 19,
       img: img19,
-      question: "¿Qué se observa en la imagen?",
+      question: "¿Que significa ser NÓMADE?",
       answer: [{
-        ans: "Un campamento Paleolítico",
+        ans: "Vivían trasladandose",
         correct: true
       }, {
-        ans: "Un poblado Neolítico",
+        ans: "Vivían en un mismo lugar",
         correct: false
       }],
-      correct: "Un campamento Paleolítico"
+      correct: "Vivían trasladandose"
+    },
+    {///cambiar
+      id: 19,
+      img: img19,
+      question: "¿Por qué en el Paleolítico vivían trasladandose?",
+      answer: [{
+        ans: "Por el mal clima",
+        correct: false
+      }, {
+        ans: "Porque se agotaban los alimentos",
+        correct: true
+      }],
+      correct: "Porque se agotaban los alimentos"
     },
     {
       id: 20,
