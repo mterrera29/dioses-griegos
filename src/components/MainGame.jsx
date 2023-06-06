@@ -9,6 +9,7 @@ import { PALEOLITICO } from "../data_paleo";
 
 const MainGame = () => {
   const {darkMode, setDarkMode} = useContext(DarkModeContext);
+  const [botonDeshabilitado, setBotonDeshabilitado] = useState(true);
 
   const cambiarMode = () =>{
     darkMode ? setDarkMode(false) : setDarkMode(true)
@@ -20,10 +21,13 @@ const MainGame = () => {
       <h1 className={darkMode?'mainTitle dark animate__animated animate__fadeInDown':'mainTitle animate__animated animate__fadeInDown'}>{TITLES[0].appTitle}</h1>
       <section className="mainLinks">
         <Link to="/game1">
-        <div className="btnMain">{PALEOLITICO.gameTitle}</div>
+        <div className="btnMain" >{PALEOLITICO.gameTitle}</div>
         </Link>
-        <Link to="/game">
-        <div className="btnMain" >{PALEOLITICO_NEOLITICO.gameTitle}</div>
+        <Link to={botonDeshabilitado || "/game2"}>
+        <div className="btnMain" disabled={botonDeshabilitado} >La vida en el Neolítico</div>
+        </Link>
+        <Link to={botonDeshabilitado || "/game"}>
+        <div className="btnMain" disabled={botonDeshabilitado} >{PALEOLITICO_NEOLITICO.gameTitle}</div>
         </Link>
       </section>
     </main>

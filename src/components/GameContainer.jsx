@@ -15,7 +15,7 @@ export const GameContainer = ({preguntasCant, darkMode, data}) => {
   const {select, selected} = useSelect()
   const {isCorrect, puntos, isLoading, resetPts} = useCorrect({index, select})
   const [winner, setWinner] = useState (false)
-
+  
   useEffect(() => {
       setShuffledConsignas(data.consignas.sort(() => Math.random() - 0.5))
   }, [])

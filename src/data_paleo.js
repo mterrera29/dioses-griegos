@@ -9,13 +9,16 @@ import img18 from "./images/Nueva carpeta/tinified/puebloPaleo.jpg"
 import img19 from "./images/Nueva carpeta/tinified/puebloPaleo2.jpg"
 import img20 from "./images/Nueva carpeta/tinified/recolección.jpg"
 import img21 from "./images/Nueva carpeta/tinified/arpon.jpg"
+import img22 from "./images/altamira.jpg"
+import img23 from "./images/herramientas.jpg"
+import img24 from "./images/tribu.jpg"
 export const PALEOLITICO ={
   appTitle:"prehistoric games",
   gameTitle:"La vida en el Paleolítico",
-  questionQuantity:[2, 15],
+  questionQuantity:[10,15,20],
   consignas:[
     {
-      id: 6,
+      id: 1,
       img: img6,
       question: "¿Para qué se utilizaba esta herramienta?",
       answer: [{
@@ -34,7 +37,7 @@ export const PALEOLITICO ={
       correct: "Faenar animales"
     },
     {
-      id: 6,
+      id: 2,
       img: img6,
       question: "¿Qué herramienta es?",
       answer: [{
@@ -53,7 +56,7 @@ export const PALEOLITICO ={
       correct: "Chopper"
     },
     {
-      id: 9,
+      id: 3,
       img: img9,
       question: "¿Para qué se utilizaba esta herramienta?",
       answer: [{
@@ -72,7 +75,7 @@ export const PALEOLITICO ={
       correct: "Faenar animales"
     },
     {
-      id: 9,
+      id: 4,
       img: img9,
       question: "¿Qué herramienta es?",
       answer: [{
@@ -91,7 +94,7 @@ export const PALEOLITICO ={
       correct: "Hacha de mano"
     },
     {
-      id: 12,
+      id: 5,
       img: img12,
       question: "¿Para qué se utilizaba esta herramienta?",
       answer: [{
@@ -110,7 +113,7 @@ export const PALEOLITICO ={
       correct: "Cazar animales"
     },
     {
-      id: 12,
+      id: 6,
       img: img12,
       question: "¿Qué herramienta es?",
       answer: [{
@@ -129,7 +132,7 @@ export const PALEOLITICO ={
       correct: "Punta de piedra"
     },
     {
-      id: 13,
+      id: 7,
       img: img13,
       question: "¿Qué herramienta es?",
       answer: [{
@@ -148,7 +151,7 @@ export const PALEOLITICO ={
       correct: "Aguja de hueso"
     },
     {
-      id: 14,
+      id: 8,
       img: img14,
       question: "¿Qué actividad estan realizando?",
       answer: [{
@@ -167,7 +170,7 @@ export const PALEOLITICO ={
       correct: "Cazar animales"
     },
     {
-      id: 16,
+      id: 9,
       img: img16,
       question: "¿Qué actividad está realizando?",
       answer: [{
@@ -186,7 +189,7 @@ export const PALEOLITICO ={
       correct: "Pesca"
     },
     {
-      id: 18,
+      id: 10,
       img: img18,
       question: "¿Qué son las BANDAS o CLANES?",
       answer: [{
@@ -196,16 +199,16 @@ export const PALEOLITICO ={
         ans: "Grupos de 1000 o 3000 personas",
         correct: false
       }, {
-        ans: "Grupos de 150 o 300 personas",
+        ans: "Grupos de 30 o 150 personas",
         correct: true
       }, {
         ans: "Grupos de 1500 o 3000 personas",
         correct: false
       }],
-      correct: "Grupos de 150 o 300 personas"
+      correct: "Grupos de 30 o 150 personas"
     },
     {
-      id: 18,
+      id: 11,
       img: img18,
       question: "¿Donde vivían los seres humanos del Paleolítico?",
       answer: [{
@@ -224,7 +227,7 @@ export const PALEOLITICO ={
       correct: "En campamentos"
     },
     {
-      id: 18,
+      id: 12,
       img: img18,
       question: "¿Donde vivían los seres humanos del Paleolítico?",
       answer: [{
@@ -243,7 +246,7 @@ export const PALEOLITICO ={
       correct: "En cuevas"
     },
     {///cambiar
-      id: 19,
+      id: 13,
       img: img19,
       question: "¿Que significa ser NÓMADE?",
       answer: [{
@@ -256,7 +259,7 @@ export const PALEOLITICO ={
       correct: "Vivían trasladandose"
     },
     {///cambiar
-      id: 19,
+      id: 14,
       img: img19,
       question: "¿Por qué en el Paleolítico vivían trasladandose?",
       answer: [{
@@ -269,7 +272,7 @@ export const PALEOLITICO ={
       correct: "Porque se agotaban los alimentos"
     },
     {
-      id: 20,
+      id: 15,
       img: img20,
       question: "¿Qué actividad está realizando?",
       answer: [{
@@ -288,7 +291,7 @@ export const PALEOLITICO ={
       correct: "Recolección"
     },
     {
-      id: 21,
+      id: 16,
       img: img21,
       question: "¿Qué herramienta es?",
       answer: [{
@@ -307,7 +310,7 @@ export const PALEOLITICO ={
       correct: "Arpón de hueso"
     },
     {
-      id: 21,
+      id: 17,
       img: img21,
       question: "¿Para qué se utilizaba esta herramienta?",
       answer: [{
@@ -324,6 +327,70 @@ export const PALEOLITICO ={
         correct: true
       }],
       correct: "Pescar"
+    },
+    {
+      id: 18,
+      img: img22,
+      question: "¿Cómo se llama el arte del Paleolítico?",
+      answer: [{
+        ans: "Arte prehistórico",
+        correct: false
+      }, {
+        ans: "Impresionismo",
+        correct: false
+      }, {
+        ans: "Arte rupestre",
+        correct: true
+      }, {
+        ans: "Arte cavernícola",
+        correct: false
+      }],
+      correct: "Arte rupestre"
+    },
+    {
+      id: 19,
+      img: img23,
+      question: "¿Cómo se fabricaban herramientas durante el Paleolítico?",
+      answer: [{
+        ans: "Puliendo piedras",
+        correct: false
+      }, {
+        ans: "Golpeando piedras",
+        correct: true
+      }, {
+        ans: "Fundiendo metales",
+        correct: false
+      }, {
+        ans: "Raspando piedras",
+        correct: false
+      }],
+      correct: "Golpeando piedras"
+    },
+    {
+      id: 20,
+      img: img24,
+      question: "Los seres humanos del Paleolítico...",
+      answer: [{
+        ans: "eran productores",
+        correct: false
+      }, {
+        ans: "eran depredadores.",
+        correct: true
+      }],
+      correct: "eran depredadores."
+    },
+    {
+      id: 21,
+      img: img20,
+      question: "Los seres humanos del Paleolítico..",
+      answer: [{
+        ans: "sembraban y cosechaban alimentos.",
+        correct: false
+      }, {
+        ans: "recolectaban frutos silvestres.",
+        correct: true
+      }],
+      correct: "recolectaban frutos silvestres."
     }
   ]
 }

@@ -23,13 +23,13 @@ export const CuantasPreguntas = ({cuantasPreguntas, data}) => {
       <section className='cuantasPregModal'>
         <h3 className='pregTitle'>{data.gameTitle}</h3>
         {
-        preguntasCant.map((cant)=>(
+        preguntasCant.map((cant, indice)=>(
           <>
-            <div className="btnCant" onClick={()=>handleClick(cant)}>{cant} preguntas
+            <div key={indice} className="btnCant" onClick={()=>handleClick(cant)} >{cant} preguntas
             {isWin(cant) && <img className="winIcon" src={winStar} alt="" />
               }
             
-            <WinPoints cant={cant} data={data} />
+            <WinPoints cant={cant} data={data}/>
             </div>
           </>
         ))
