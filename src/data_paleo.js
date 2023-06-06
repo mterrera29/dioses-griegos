@@ -331,7 +331,7 @@ export const PALEOLITICO ={
     {
       id: 18,
       img: img22,
-      question: "¿Cómo se llama el arte del Paleolítico?",
+      question: "¿Cómo se llama el arte en las cuevas del Paleolítico?",
       answer: [{
         ans: "Arte prehistórico",
         correct: false

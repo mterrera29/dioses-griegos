@@ -55,6 +55,12 @@
   opacity: 0.7;
   cursor: not-allowed;
 }
+.btnMain:hover[disabled] {
+  background-color:var(--oscuro);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 
 .btnCant{
   position:relative;
