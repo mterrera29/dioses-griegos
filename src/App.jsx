@@ -5,6 +5,7 @@ import "./components/AppGame.css"
 import MainGame from './components/MainGame';
 import { PALEOLITICO_NEOLITICO } from './data';
 import { PALEOLITICO } from './data_paleo';
+import { NEOLITICO } from "./data_neo";
 
 
 
@@ -15,6 +16,7 @@ function App (){
         <Route exact element={<MainGame />} path='/' />
         <Route exact element={<AppGame data={PALEOLITICO_NEOLITICO} />} path='/game' />
         <Route exact element={<AppGame data={PALEOLITICO} />} path='/game1' />
+        <Route exact element={<AppGame data={NEOLITICO} />} path='/game2' />
       </Routes>
     </BrowserRouter>
   )

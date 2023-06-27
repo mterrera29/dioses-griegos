@@ -15,6 +15,13 @@
   background-image: var(--bgAppDark);
 }
 
+.mainApp.neo{
+  background-image: var(--bgAppNeo);
+}
+.mainApp.paleo{
+  background-image: var(--bgAppPaleo);
+}
+
 .appContainer{
   position: relative;
   display: flex;

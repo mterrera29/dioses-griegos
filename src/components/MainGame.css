@@ -102,4 +102,7 @@
   .mainGame{
     width: 100%;
   }
+  .mainGame.dark{
+    background-position: -100px center;
+  }
 }

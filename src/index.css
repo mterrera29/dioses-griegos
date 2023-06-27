@@ -22,7 +22,9 @@
   --bgMain:url("./images/asets/comprimidas/fondoLight.jpg");
   --bgMainDark:url("./images/asets/comprimidas/fondoDark.jpg");
   --bgApp:url("./images/asets/comprimidas/light.jpg");
-  --bgAppDark:url("./images/asets/comprimidas/dark.jpg")
+  --bgAppDark:url("./images/asets/comprimidas/dark.jpg");
+  --bgAppPaleo:url("./images/asets/comprimidas/fondoPaleo.jpg");
+  --bgAppNeo:url("./images/asets/comprimidas/fondoNeo2.jpg");
  }
 a {
   text-decoration: inherit;

@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import { DarkModeContext } from "../context/darkMode";
 import { PALEOLITICO_NEOLITICO } from "../data";
 import { PALEOLITICO } from "../data_paleo";
+import { NEOLITICO } from "../data_neo";
 
 const MainGame = () => {
   const {darkMode, setDarkMode} = useContext(DarkModeContext);
-  const [botonDeshabilitado, setBotonDeshabilitado] = useState(true);
+  const [botonDeshabilitado, setBotonDeshabilitado] = useState(false);
 
   const cambiarMode = () =>{
     darkMode ? setDarkMode(false) : setDarkMode(true)
@@ -24,7 +25,7 @@ const MainGame = () => {
         <div className="btnMain" >{PALEOLITICO.gameTitle}</div>
         </Link>
         <Link to={botonDeshabilitado || "/game2"}>
-        <div className="btnMain" disabled={botonDeshabilitado} >La vida en el Neolítico</div>
+        <div className="btnMain"  >{NEOLITICO.gameTitle}</div>
         </Link>
         <Link to={botonDeshabilitado || "/game"}>
         <div className="btnMain" disabled={botonDeshabilitado} >{PALEOLITICO_NEOLITICO.gameTitle}</div>

@@ -21,7 +21,7 @@ function AppGame({data}) {
   
   return (
       <SelectedProvider>
-        <main className={darkMode?'mainApp dark':'mainApp'}>
+        <main className={darkMode ?'mainApp dark': data.gameTitle === "La vida en el Paleolítico"?'mainApp paleo':data.gameTitle === "La vida en el Neolítico"?'mainApp neo':'mainApp'}>
           {!preguntasCant ?
             <>
               <h1 className={darkMode?'animate__animated animate__fadeInDown mainTitle dark':'animate__animated animate__fadeInDown mainTitle'}>{data.appTitle}</h1>
