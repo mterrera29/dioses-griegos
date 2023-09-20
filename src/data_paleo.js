@@ -15,65 +15,8 @@ import img24 from "./images/tribu.jpg"
 export const PALEOLITICO ={
   appTitle:"prehistoric games",
   gameTitle:"La vida en el Paleolítico",
-  questionQuantity:[10,15,20],
+  questionQuantity:[15],
   consignas:[
-    {
-      id: 1,
-      img: img6,
-      question: "¿Para qué se utilizaba esta herramienta?",
-      answer: [{
-        ans: "Faenar animales",
-        correct: true
-      }, {
-        ans: "Abrir surcos para sembrar",
-        correct: false
-      }, {
-        ans: "Cazar animales",
-        correct: false
-      }, {
-        ans: "Moler granos",
-        correct: false
-      }],
-      correct: "Faenar animales"
-    },
-    {
-      id: 2,
-      img: img6,
-      question: "¿Qué herramienta es?",
-      answer: [{
-        ans: "Hacha pulida",
-        correct: false
-      }, {
-        ans: "Chopper",
-        correct: true
-      }, {
-        ans: "Arado",
-        correct: false
-      }, {
-        ans: "Mortero",
-        correct: false
-      }],
-      correct: "Chopper"
-    },
-    {
-      id: 3,
-      img: img9,
-      question: "¿Para qué se utilizaba esta herramienta?",
-      answer: [{
-        ans: "Faenar animales",
-        correct: true
-      }, {
-        ans: "Abrir surcos para sembrar",
-        correct: false
-      }, {
-        ans: "Cazar animales",
-        correct: false
-      }, {
-        ans: "Moler granos",
-        correct: false
-      }],
-      correct: "Faenar animales"
-    },
     {
       id: 4,
       img: img9,
@@ -82,7 +25,7 @@ export const PALEOLITICO ={
         ans: "Hacha pulida",
         correct: false
       }, {
-        ans: "Chopper",
+        ans: "Punta de piedra",
         correct: false
       }, {
         ans: "Arado",
@@ -218,7 +161,7 @@ export const PALEOLITICO ={
         ans: "En campamentos",
         correct: true
       }, {
-        ans: "Al aire libre",
+        ans: "En aldeas",
         correct: false
       }, {
         ans: "En edificios",
@@ -279,7 +222,7 @@ export const PALEOLITICO ={
         ans: "Sembrar",
         correct: false
       }, {
-        ans: "Recolección",
+        ans: "Recolección de frutos",
         correct: true
       }, {
         ans: "Cazar animales",
@@ -288,7 +231,7 @@ export const PALEOLITICO ={
         ans: "Cosechar",
         correct: false
       }],
-      correct: "Recolección"
+      correct: "Recolección de frutos"
     },
     {
       id: 16,

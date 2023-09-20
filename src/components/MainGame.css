@@ -98,6 +98,9 @@
   top: 4px;
   z-index: 5;
 }
+.titleStrong{
+  padding-right: 10px;
+}
 @media screen and (max-width: 1000px){
   .mainGame{
     width: 100%;

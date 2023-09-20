@@ -24,7 +24,7 @@ import img22 from "./images/Nueva carpeta/tinified/ceramica.jpg"
 export const PALEOLITICO_NEOLITICO={
   appTitle:"prehistoric games",
   gameTitle:"¿Paleolítico o Neolítico?",
-  questionQuantity:[10, 15, 20],
+  questionQuantity:[15],
   consignas:[
     {
       id: 1,

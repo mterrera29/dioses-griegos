@@ -15,45 +15,26 @@ import img23 from "./images/aldeas.jpg"
 export const NEOLITICO ={
   appTitle:"prehistoric games",
   gameTitle:"La vida en el Neolítico",
-  questionQuantity:[10,15,20],
+  questionQuantity:[15],
   consignas:[
-    {
-      id: 1,
-      img: img1,
-      question: "¿Qué están haciendo en la imagen?",
-      answer: [{
-        ans: "Recolección",
-        correct: false
-      }, {
-        ans: "Cazando",
-        correct: false
-      }, {
-        ans: "Cosechando",
-        correct: true
-      }, {
-        ans: "Limpiando el terreno",
-        correct: false
-      }],
-      correct: "Cosechando"
-    },
     {
       id: 2,
       img: img2,
       question: "¿Qué están haciendo en la imagen?",
       answer: [{
-        ans: "Cosechando",
+        ans: "Cosechando granos",
         correct: true
       }, {
         ans: "Cazando",
         correct: false
       }, {
-        ans: "Recolección",
+        ans: "Recolección de frutos",
         correct: false
       }, {
         ans: "Creando herramientas",
         correct: false
       }],
-      correct: "Cosechando"
+      correct: "Cosechando granos"
     },
     {
       id: 3,
@@ -96,25 +77,6 @@ export const NEOLITICO ={
     {
       id: 4,
       img: img4,
-      question: "¿Qué herramienta está utilizando?",
-      answer: [{
-        ans: "Hacha pulida",
-        correct: false
-      }, {
-        ans: "Chopper",
-        correct: false
-      }, {
-        ans: "Arado",
-        correct: true
-      }, {
-        ans: "Mortero",
-        correct: false
-      }],
-      correct: "Arado"
-    },
-    {
-      id: 4,
-      img: img4,
       question: "¿Qué actividad está realizando?",
       answer: [{
         ans: "Limpiar el terreno",
@@ -136,19 +98,19 @@ export const NEOLITICO ={
       img: img7,
       question: "¿Qué están haciendo en la imagen?",
       answer: [{
-        ans: "Recolectando alimentos",
+        ans: "Recolectando frutos",
         correct: false
       }, {
         ans: "Cazando",
         correct: false
       }, {
-        ans: "Cosechando",
+        ans: "Cosechando granos",
         correct: true
       }, {
         ans: "Limpiando el terreno",
         correct: false
       }],
-      correct: "Cosechando"
+      correct: "Cosechando granos"
     },
     {
       id: 8,
@@ -225,25 +187,6 @@ export const NEOLITICO ={
         correct: false
       }],
       correct: "Hacha pulida"
-    },
-    {
-      id: 15,
-      img: img15,
-      question: "¿Para qué se utilizaba esta herramienta?",
-      answer: [{
-        ans: "Limpiar el terreno",
-        correct: true
-      }, {
-        ans: "Abrir surcos para sembrar",
-        correct: false
-      }, {
-        ans: "Cazar",
-        correct: false
-      }, {
-        ans: "Moler granos",
-        correct: false
-      }],
-      correct: "Limpiar el terreno"
     },
     {
       id: 22,
@@ -391,19 +334,6 @@ export const NEOLITICO ={
         correct: true
       }],
       correct: "En aldeas"
-    },
-    {
-      id: 21,
-      img: img2,
-      question: "En que orden se realizan los PASOS de la AGRICULTURA",
-      answer: [{
-        ans: "Arar y sembrar, Cosechar, Moler y Limpiar",
-        correct: false
-      }, {
-        ans: "Limpiar, Arar y sembrar, Cosechar, Moler",
-        correct: true
-      }],
-      correct: "Limpiar, Arar y sembrar, Cosechar, Moler"
     },
     
     {
