@@ -22,6 +22,9 @@
   background-image: var(--bgAppPaleo);
 }
 
+.mainApp.griegos{
+  background-image: var(--bgAppGriegos);
+}
 .appContainer{
   position: relative;
   display: flex;
