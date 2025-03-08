@@ -15,7 +15,7 @@ import hades from './images/Nueva carpeta/tinified/hades.jpg';
 export const GRIEGOS = {
   appTitle: 'Los dioses griegos',
   gameTitle: 'Los dioses griegos',
-  questionQuantity: [15],
+  questionQuantity: [10, 20],
   consignas: [
     {
       id: 1,

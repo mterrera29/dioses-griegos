@@ -17,8 +17,8 @@
   -webkit-text-size-adjust: 100%;
 }
 :root {
-  --claro: rgb(128, 128, 128, 0.8);
-  --oscuro: rgb(66, 65, 66, 0.8);
+  --claro: rgb(128, 128, 128, 0.9);
+  --oscuro: rgb(66, 65, 66, 0.9);
   --bgMain: url('./images/asets/comprimidas/fondoLightGrecia.jpg');
   --bgMainDark: url('./images/asets/comprimidas/fondoDarkGrecia.jpg');
   --bgApp: url('./images/asets/comprimidas/light.jpg');
