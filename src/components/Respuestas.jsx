@@ -2,10 +2,7 @@ import React from 'react';
 import { RespuestasCaja } from './RespuestasCaja';
 
 export const Respuestas = ({ consignasData }) => {
-  function shuffleArray(array) {
-    return [...array].sort(() => Math.random() - 0.5);
-  }
-  const answers = shuffleArray(consignasData.answer);
+  const answers = consignasData.answer;
 
   return (
     <div className='respuestas'>
